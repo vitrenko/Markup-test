@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="header-container">
+      <img src="./images/logo.png" width="138" height="138" alt="monblan logo" class="logo">
+      <div class="info">
+        <div class="name-date-wrap">
+          <span class="name">monblanproject</span>
+          <span class="date-pill">Start on 17-02-2016</span>
+        </div>
+        <div class="stats">
+          <span><strong>870</strong> posts</span>
+          <span><strong>11,787</strong> followers</span>
+          <span><strong>112</strong> following</span>
+        </div>
+        <div class="picker-wrap">
+          <span>Date</span>
+          <div class="input-wrap">
+            <input type="text" class="start" placeholder="from">
+            <button class="close">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.3137 9.89949L7.07107 5.65685L11.3137 1.41421L9.8995 -4.64916e-06L5.65686 4.24264L1.41422 -4.64916e-06L6.19888e-06 1.41421L4.24265 5.65685L6.19888e-06 9.89949L1.41422 11.3137L5.65686 7.07106L9.8995 11.3137L11.3137 9.89949Z" fill="#5F5F5F"/>
+              </svg>
+            </button>
+            <button class="calendar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"/><path fill="#5F5F5F" d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2M19 8l.001 12H5V8z"/></svg>
+            </button>
+          </div>
+          <div class="input-wrap">
+            <input type="text" class="end" placeholder="to">
+            <button class="close">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.3137 9.89949L7.07107 5.65685L11.3137 1.41421L9.8995 -4.64916e-06L5.65686 4.24264L1.41422 -4.64916e-06L6.19888e-06 1.41421L4.24265 5.65685L6.19888e-06 9.89949L1.41422 11.3137L5.65686 7.07106L9.8995 11.3137L11.3137 9.89949Z" fill="#5F5F5F"/>
+              </svg>
+            </button>
+            <button class="calendar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"/><path fill="#5F5F5F" d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2M19 8l.001 12H5V8z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="view-buttons">
+      <button class="tile-view">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"><path fill="#3D8EDA" d="M2 2h4v4H2zm12 0h4v4h-4zM8 2h4v4H8zM2 14h4v4H2zm12 0h4v4h-4zm-6 0h4v4H8zM2 8h4v4H2zm12 0h4v4h-4zM8 8h4v4H8z"/></svg>
+      </button>
+      <button class="list-view active">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#C8C7C7" fill-rule="evenodd" d="M7 1H1v6h6zm0 8H1v6h6zm-6 8h6v6H1zM9 5h14V3H9zm14 8H9v-2h14zM9 21h14v-2H9z" clip-rule="evenodd"/></svg>
+      </button>
+    </div>
+    <div class="content-wrap">
+      <div class="item">
+        <img src="./images/img1.jpg" width="86" height="86" alt="">
+        <div class="item-wrap">
+          <div class="stats">
+            <span>Today</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>128</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>9-08-2016</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>67</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>Image upload</span>
+            <span>11-04-2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/img2.jpg" width="86" height="86" alt="">
+        <div class="item-wrap">
+          <div class="stats">
+            <span>Today</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>128</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>9-08-2016</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>67</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>Image upload</span>
+            <span>11-04-2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/img3.jpg" width="86" height="86" alt="">
+        <div class="item-wrap">
+          <div class="stats">
+            <span>Today</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>128</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>9-08-2016</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>67</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>Image upload</span>
+            <span>11-04-2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/img4.jpg" width="86" height="86" alt="">
+        <div class="item-wrap">
+          <div class="stats">
+            <span>Today</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>128</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>9-08-2016</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>67</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>Image upload</span>
+            <span>11-04-2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/img5.jpg" width="86" height="86" alt="">
+        <div class="item-wrap">
+          <div class="stats">
+            <span>Today</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>128</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>9-08-2016</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>67</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>Image upload</span>
+            <span>11-04-2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/img6.jpg" width="86" height="86" alt="">
+        <div class="item-wrap">
+          <div class="stats">
+            <span>Today</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>128</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>9-08-2016</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>67</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>Image upload</span>
+            <span>11-04-2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/img7.jpg" width="86" height="86" alt="">
+        <div class="item-wrap">
+          <div class="stats">
+            <span>Today</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>128</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>9-08-2016</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>67</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>Image upload</span>
+            <span>11-04-2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/img8.jpg" width="86" height="86" alt="">
+        <div class="item-wrap">
+          <div class="stats">
+            <span>Today</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>128</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>9-08-2016</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>67</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>Image upload</span>
+            <span>11-04-2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/img9.jpg" width="86" height="86" alt="">
+        <div class="item-wrap">
+          <div class="stats">
+            <span>Today</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>128</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>31</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>9-08-2016</span>
+            <div class="stats-wrap">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"/></svg>
+                <span>67</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000" d="M4.616 17q-.691 0-1.153-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615v15.462L17.923 17z"/></svg>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <span>Image upload</span>
+            <span>11-04-2016</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="load-more">LOAD MORE</button>
+  </main>
+</div>
+<script src="https://unpkg.com/js-datepicker"></script>
+<script src="index.js"></script>
+</body>
+</html>
