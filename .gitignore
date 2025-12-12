@@ -1,0 +1,8 @@
+# macOS system files
+.DS_Store
+
+# JetBrains IDE (WebStorm)
+.idea/
+
+# Sass map files
+*.css.map
