@@ -203,9 +203,6 @@ main .view-buttons button {
 main .view-buttons button.active svg path {
   fill: #C8C8C8;
 }
-main .view-buttons button svg {
-  display: block;
-}
 main .view-buttons button svg path {
   fill: #3D8EDA;
 }
@@ -303,6 +300,7 @@ main .load-more {
   font-size: 11px;
   background-color: #fafafa;
   letter-spacing: -0.8px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
