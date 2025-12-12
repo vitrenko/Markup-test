@@ -43,6 +43,12 @@ button {
   width: 630px;
   height: 396px;
 }
+@media (max-width: 767px) {
+  .wrapper::before {
+    width: 315px;
+    height: 198px;
+  }
+}
 .wrapper::after {
   display: block;
   content: "";
@@ -79,12 +85,27 @@ header .header-container .info .stats {
   display: flex;
 }
 header .header-container .info .stats span {
-  margin-right: 1rem;
+  margin-right: 16px;
   font-size: 15px;
   letter-spacing: -0.4px;
 }
+@media (max-width: 767px) {
+  header .header-container {
+    gap: 10px;
+    align-items: center;
+  }
+  header .header-container .info {
+    gap: 10px;
+  }
+  header .header-container .info .name-date-wrap {
+    flex-direction: column;
+  }
+  header .header-container .info .name-date-wrap .name {
+    margin: 0 0 6px;
+  }
+}
 header .name {
-  margin: 0 1rem 1rem 0;
+  margin: 0 16px 16px 0;
   font: 1.5rem "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
 header .date-pill {
@@ -138,6 +159,23 @@ header .picker-wrap .input-wrap button svg {
 }
 header .picker-wrap .input-wrap button.calendar {
   border-radius: 0 4px 4px 0;
+}
+@media (max-width: 767px) {
+  header .picker-wrap {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  header .picker-wrap .input-wrap {
+    margin-right: 0;
+  }
+  header .picker-wrap .input-wrap .qs-datepicker-container {
+    left: auto !important;
+    right: 0;
+  }
+  header .picker-wrap span {
+    margin-right: 0;
+  }
 }
 
 main {

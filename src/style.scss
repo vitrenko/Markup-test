@@ -42,6 +42,11 @@ button {
     z-index: -1;
     width: 630px;
     height: 396px;
+
+    @media (max-width: 767px) {
+      width: 315px;
+      height: 198px;
+    }
   }
 
   &::after {
@@ -81,16 +86,33 @@ header {
         display: flex;
 
         span {
-          margin-right: 1rem;
+          margin-right: 16px;
           font-size: 15px;
           letter-spacing: -0.4px;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      gap: 10px;
+      align-items: center;
+
+      .info {
+        gap: 10px;
+
+        .name-date-wrap {
+          flex-direction: column;
+
+          .name {
+            margin: 0 0 6px;
+          }
         }
       }
     }
   }
 
   .name {
-    margin: 0 1rem 1rem 0;
+    margin: 0 16px 16px 0;
     font: 1.5rem "Montserrat", 'Helvetica Neue', Arial, sans-serif;
   }
 
@@ -152,6 +174,25 @@ header {
         &.calendar {
           border-radius: 0 4px 4px 0;
         }
+      }
+    }
+    
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px;
+
+      .input-wrap {
+        margin-right: 0;
+
+        .qs-datepicker-container {
+          left: auto !important;
+          right: 0;
+        }
+      }
+
+      span {
+        margin-right: 0;
       }
     }
   }
